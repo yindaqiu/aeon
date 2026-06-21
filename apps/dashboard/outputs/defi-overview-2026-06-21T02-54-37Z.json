@@ -1,0 +1,252 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "DeFi — 2026-06-21",
+        "description": "Mixed: volume down 7.7% on strong weekly base; TVL and stables flat"
+      },
+      "children": [
+        "stats_top",
+        "sep1",
+        "h_chains",
+        "chains_grid",
+        "sep2",
+        "movers_alert",
+        "sep3",
+        "h_fees",
+        "fees_table",
+        "fees_note",
+        "sep4",
+        "h_dex",
+        "dex_stat",
+        "dex_movers",
+        "sep5",
+        "h_stables",
+        "stables_stat",
+        "stables_note",
+        "sep6",
+        "yields_note",
+        "sources"
+      ]
+    },
+    "stats_top": {
+      "type": "Stat",
+      "props": {
+        "label": "Total TVL",
+        "value": "~$73.9B",
+        "delta": "Δ1d n/a",
+        "trend": "neutral"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "h_chains": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Chains",
+        "level": "h3"
+      }
+    },
+    "chains_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "sm"
+      },
+      "children": [
+        "chain_eth",
+        "chain_bsc",
+        "chain_sol"
+      ]
+    },
+    "chain_eth": {
+      "type": "Stat",
+      "props": {
+        "label": "1. Ethereum",
+        "value": "$39.1B"
+      }
+    },
+    "chain_bsc": {
+      "type": "Stat",
+      "props": {
+        "label": "2. BSC",
+        "value": "$5.1B"
+      }
+    },
+    "chain_sol": {
+      "type": "Stat",
+      "props": {
+        "label": "3. Solana",
+        "value": "$4.9B"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "movers_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Movers",
+        "message": "No chain or protocol movers cleared thresholds (±5%/$500M chains; ±10%/$100M protocols) in available data",
+        "type": "info"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "h_fees": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Leaders (24h)",
+        "level": "h3"
+      }
+    },
+    "fees_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "#",
+          "Protocol",
+          "Fees",
+          "Δ vs prior day"
+        ],
+        "rows": [
+          [
+            "1",
+            "Lido",
+            "$1.09M",
+            "−1.6%"
+          ],
+          [
+            "2",
+            "Sky Lending",
+            "$998K",
+            "flat"
+          ],
+          [
+            "3",
+            "Raydium AMM",
+            "$102K",
+            "−14.9%"
+          ]
+        ]
+      }
+    },
+    "fees_note": {
+      "type": "Text",
+      "props": {
+        "text": "Fees beating TVL: skipped — protocol TVL change_7d unavailable for cross-check against fees",
+        "variant": "muted"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "h_dex": {
+      "type": "Heading",
+      "props": {
+        "text": "DEX Volume (24h)",
+        "level": "h3"
+      }
+    },
+    "dex_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "DEX Volume 24h",
+        "value": "$4.70B",
+        "delta": "−7.7% (1d) · +26.4% (7d)",
+        "trend": "down"
+      }
+    },
+    "dex_movers": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "sm"
+      },
+      "children": [
+        "dex_orca",
+        "dex_ray",
+        "dex_curve"
+      ]
+    },
+    "dex_orca": {
+      "type": "Stat",
+      "props": {
+        "label": "Orca",
+        "value": "$226M",
+        "delta": "+11.6%",
+        "trend": "up"
+      }
+    },
+    "dex_ray": {
+      "type": "Stat",
+      "props": {
+        "label": "Raydium",
+        "value": "$162M",
+        "delta": "−4.7%",
+        "trend": "down"
+      }
+    },
+    "dex_curve": {
+      "type": "Stat",
+      "props": {
+        "label": "Curve",
+        "value": "$49M",
+        "delta": "−21.6%",
+        "trend": "down"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "h_stables": {
+      "type": "Heading",
+      "props": {
+        "text": "Stablecoins",
+        "level": "h3"
+      }
+    },
+    "stables_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Stables (partial)",
+        "value": ">$301B"
+      }
+    },
+    "stables_note": {
+      "type": "Text",
+      "props": {
+        "text": "DAI +1.8% (+$80M) — only notable single-issuer move",
+        "variant": "body"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "yields_note": {
+      "type": "Alert",
+      "props": {
+        "message": "No real-yield or incentive-yield data — yields endpoint exceeded response size limit",
+        "type": "warning"
+      }
+    },
+    "sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: llama_tvl=partial(no deltas) · llama_dex=ok · llama_fees=ok · llama_stables=ok · llama_yields=fail | var: none",
+        "variant": "caption"
+      }
+    }
+  }
+}

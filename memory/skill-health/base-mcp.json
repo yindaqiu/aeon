@@ -1,0 +1,14 @@
+{
+  "skill": "base-mcp",
+  "last_analyzed": "2026-06-21T03:04:37Z",
+  "quality_score": 3,
+  "assessment": "Correctly detected missing MCP server and followed skill's own fallback instructions to direct operator to install guide",
+  "flags": [],
+  "avg_score": 3,
+  "history": [
+    {
+      "date": "2026-06-21",
+      "score": 3
+    }
+  ]
+}

@@ -30,8 +30,8 @@
     "last_quality_score": 1
   },
   "heartbeat": {
-    "last_dispatch": "2026-07-01T13:15:31Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-07-01T15:49:40Z",
+    "last_status": "dispatched",
     "last_success": "2026-06-23T08:52:07Z",
     "total_runs": 96,
     "total_successes": 5,
